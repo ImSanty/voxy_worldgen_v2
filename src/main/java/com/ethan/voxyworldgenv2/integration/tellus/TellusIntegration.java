@@ -267,7 +267,7 @@ public final class TellusIntegration {
             TellusWorldFeatures.placeUnderwaterVegetation(pos, data, mapper, propBlocks, biomeIds, hasWaters);
 
             long brightAir = VoxyIngester.composeId(0, 0, 15);
-            int minSY = level.getMinSectionY();
+            int minSY = level.getMinBuildHeight() >> 4;
             int sCount = level.getSectionsCount();
 
             int maxHV = -64;
