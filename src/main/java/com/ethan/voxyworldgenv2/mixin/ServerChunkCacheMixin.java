@@ -13,4 +13,7 @@ import java.util.concurrent.CompletableFuture;
 public interface ServerChunkCacheMixin {
     @Invoker
     boolean invokeRunDistanceManagerUpdates();
+
+    @Invoker("getChunkFutureMainThread")
+    CompletableFuture<ChunkResult<ChunkAccess>> invokeGetChunkFutureMainThread(int x, int z, ChunkStatus status, boolean create);
 }
