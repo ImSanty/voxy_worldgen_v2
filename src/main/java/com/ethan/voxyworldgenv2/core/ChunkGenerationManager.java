@@ -324,7 +324,7 @@ public final class ChunkGenerationManager {
                             processPendingTickets();
 
                             for (ChunkPos pos : actuallyGenerate) {
-                                cache.getChunkFuture(pos.x, pos.z, ChunkStatus.FULL, true)
+                                ((ServerChunkCacheMixin) cache).invokeGetChunkFutureMainThread(pos.x, pos.z, ChunkStatus.FULL, true)
                                     .whenCompleteAsync((result, throwable) -> {
                                         if (throwable == null && result != null && result.isSuccess() && result.orElse(null) instanceof LevelChunk chunk) {
                                             onSuccess(finalState, pos);
