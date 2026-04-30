@@ -27,7 +27,7 @@ This project requires Java 21.
 
 ```bash
 # Clone the repo
-git clone https://github.com/iSeeEthan/voxy_worldgen_v2.git
+git clone [https://github.com/iSeeEthan/voxy_worldgen_v2.git](https://github.com/ImSanty/voxy_worldgen_v2.git)
 
 # Build
 ./gradlew build
