@@ -1,4 +1,6 @@
-# Voxy World Gen V2
+# Voxy World Gen V2 Backport for Minecraft 1.21.1
+
+**PLEASE DO NOT BOTHER THE DEVELOPER OR THE PEOPLE IN THEIR DISCORD WITH BUGS RELATED TO THIS VERSION, THEY WILL NOT PROVIDE ANY KIND OF SUPPORT.**
 
 ![Logo](src/main/resources/logo.png)
 
